@@ -1,1 +1,1 @@
-A switch user script
+This file contains linus scripts
