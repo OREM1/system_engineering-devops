@@ -1,0 +1,3 @@
+ #!/usr/bin/env bash
+# a create a file script
+touch hello
