@@ -1,3 +1,2 @@
- #!/usr/bin/env bash
-# a create a file script
+#!/usr/bin/env bash
 touch hello
