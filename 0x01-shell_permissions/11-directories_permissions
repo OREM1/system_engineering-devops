@@ -1,8 +1,2 @@
 #!/bin/bash
-for item in * 
-do
-    if [ -d "$item" ]
-    then
-        chmod a+x "$item"
-    fi
-done
+find . -type d -print0 | xargs -0 chmod a+x
