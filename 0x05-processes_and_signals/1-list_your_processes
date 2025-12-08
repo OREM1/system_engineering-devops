@@ -1,3 +1,2 @@
 #!/usr/bin/env bash
-# Display all running processes in a user-oriented format with hierarchy
-ps -e -o user,started,command --forest
+# This script would display all running processes in a user-oriented format with hierarchy
