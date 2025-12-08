@@ -1,3 +1,2 @@
 #!/usr/bin/env bash
-# Display all processes with exact headers and hierarchy
 ps axf
