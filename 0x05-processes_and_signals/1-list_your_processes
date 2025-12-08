@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 # Display all processes with exact headers and hierarchy
-ps -e --forest -o user,start_time,cmd --sort=pid | awk 'NR==1{print "USER STARTED CMD"; next}1'
+ps -e --forest -o user,pid,%cpu,%mem,vsz,rss,tty,stat,start,time,cmd
