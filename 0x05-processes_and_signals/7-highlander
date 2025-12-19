@@ -2,12 +2,9 @@
 # A script that displays a message indefinitely and handles SIGTERM
 
 # Catch SIGTERM and print the required message
-trap 'echo "I am invincible!!!"' SIGTERM
+trap "echo I am invincible!!!" SIGTERM
 
-while true
-do
-    echo "To infinity and beyond"
-    # Putting sleep in background and waiting for it allows the 
-    # script to respond to signals the millisecond they arrive.
-    sleep 2 & wait $!
-done
+while true; do
+  echo "To infinity and beyond"
+  sleep 2
+done;
