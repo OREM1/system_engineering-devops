@@ -1,13 +1,10 @@
 #!/usr/bin/env bash
-# A script that displays a message indefinitely and handles SIGTERM immediately
+# A script that displays a message indefinitely and handles SIGTERM
 
-# Define the trap for SIGTERM (signal 15)
 trap 'echo "I am invincible!!!"' SIGTERM
 
 while true
 do
     echo "To infinity and beyond"
-    # Running sleep in background and waiting for it makes the script 
-    # responsive to signals immediately.
-    sleep 2 & wait $!
+    sleep 2
 done
